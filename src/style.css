@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Helvetica, sans-serif, Arial;
+
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  border: 2px solid black;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.header{
+  background-color: red;
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body{
+  flex-grow: 1;
+  background-color: aqua;
+
+  display: flex;
+}
+
+.sidebar{
+  width: 20rem;
+  background-color: beige;
+
+  padding: 1rem;
+}
+
+.sidebarHead{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#addButton{
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.sidebarBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.projectButton{
+  border: 2px solid black;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  overflow-wrap: break-word;
+}
+
+.contentWindow{
+  flex-grow: 1;
+  background-color: coral;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(18rem, 1fr));
+  grid-template-rows: repeat(auto-fit, 20rem);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.addToDo{
+  background-color: gray;
+  font-size: 15rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 20rem;
+}
+
+.toDoItem{
+  background-color: white;
+  width: 18rem;
+  height: 20rem;
+  overflow-wrap: break-word;
+}
